@@ -36,9 +36,9 @@ body {
     max-width: 225px;
     max-height: 80px;
     margin: 50px auto;
-    padding: 25px;
+    padding: 20px;
     text-align: center;
-    background-color: #ffffff;
+
 }
 
 .tabs input[type="radio"] {
@@ -46,7 +46,7 @@ body {
 }
 
 .tabs label {
-    padding: 25px;
+    padding: 20px;
     font-weight: bold;
     cursor: pointer; /* Dodaj kursor wskazujący na etykiecie */
     border-radius: 5px; /* Zaokrąglenie krawędzi etykiety */
