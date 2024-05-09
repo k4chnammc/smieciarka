@@ -1,32 +1,34 @@
-
 body {
     background-image: url('map_background.png');
     background-size: cover;
-    font-family: Arial, sans-serif;
+    font-family: Georgia, serif; /* Zmiana czcionki na Georgia */
 }
 
-.button {
-    background: #BAC9A6; /* Kolor tła */
-    box-shadow: inset 10px 13px 49px -3px #bac9a6;
-    border-radius: 22px;
-    display: inline-block;
-    cursor: pointer;
-    color: #2e2e2e;
-    font-family: Georgia;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 12px 30px;
-    text-decoration: none;
+button {
+	box-shadow: inset 0px 1px 0px 0px #ffffff;
+	background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	background-color: #f9f9f9;
+	border-radius: 6px;
+	border: 1px solid #dcdcdc;
+	display: inline-block;
+	cursor: pointer;
+	color: #666666;
+	font-family: Georgia, serif; /* Zmiana czcionki na Georgia */
+	font-size: 15px;
+	font-weight: bold;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #ffffff;
 }
 
-.button:hover {
-    background: linear-gradient(to bottom, #bdd1af 5%, #dbe6c4 100%);
-    background-color: #bdd1af;
+button:hover {
+	background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	background-color: #e9e9e9;
 }
 
-.button:active {
-    position: relative;
-    top: 1px;
+button:active {
+	position: relative;
+	top: 1px;
 }
 
 .tabs {
@@ -38,7 +40,6 @@ body {
     margin: 50px auto;
     padding: 20px;
     text-align: center;
-
 }
 
 .tabs input[type="radio"] {
@@ -50,6 +51,8 @@ body {
     font-weight: bold;
     cursor: pointer; /* Dodaj kursor wskazujący na etykiecie */
     border-radius: 5px; /* Zaokrąglenie krawędzi etykiety */
+    transition: background-color 0.3s, color 0.3s; /* Dodaj płynne przejście */
+    font-family: Georgia, serif; /* Zmiana czcionki na Georgia */
 }
 
 /* Dodaj styl dla niezaznaczonych etykiet */
@@ -72,20 +75,21 @@ body {
     order: 1;
     display: flex;
     justify-content: center;
-    box-shadow:inset 0px 1px 0px 0px #ffffff;
-    background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
-    background-color:#f9f9f9;
-    border-radius:6px;
-    border:1px solid #dcdcdc;
-    display:inline-block;
-    cursor:pointer;
-    color:#666666;
-    font-family:Georgia;
-    font-size:15px;
-    font-weight:bold;
-    padding:100px 150px;
-    text-decoration:none;
-    text-shadow:0px 1px 0px #ffffff; /* Wycentruj elementy formularzy */
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+   
+
+    background-color: rgba(230,230,230,0.7);
+    border-radius: 6px;
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    cursor: pointer;
+    color: #666666;
+    font-family: Georgia, serif; /* Zmiana czcionki na Georgia */
+    font-size: 15px;
+    font-weight: bold;
+    padding: 100px 150px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff; /* Wycentruj elementy formularzy */
 }
 
 /* Ukryj formularz rejestracji na początku */
@@ -96,4 +100,28 @@ body {
 /* Dodaj ten styl, aby wyświetlić tylko formularz logowania na początku */
 #login-form {
     display: block;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    padding: 7px;
+    width: 200px;
+    font-size: 14px;
+    border: 0px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #2e2e2e;
+    border-style: hidden;
+    border-radius: 50px;
+    box-shadow: 0px 0px 5px rgba(46, 46, 46, 0.47);
+    font-family: Georgia, serif; /* Zmiana czcionki na Georgia */
+    outline: none; /* Usuwa domyślny kontur po kliknięciu */
+}
+
+/* Styl dla aktywnego pola wpisywania */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    outline: none; /* Usuwa kontur po kliknięciu */
 }
